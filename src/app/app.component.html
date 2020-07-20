@@ -77,7 +77,7 @@
   </div>
 </mat-toolbar> -->
 
-<h4>Menu</h4>
+<!-- <h4>Menu</h4>
 <mat-menu #appMenu="matMenu">
   <button mat-menu-item [matMenuTriggerFor]="subMenu">Front End</button>
   <button mat-menu-item>Back End</button>
@@ -101,4 +101,143 @@
 
 <button mat-raised-button color="primary" 
 [matMenuTriggerData]="{name:'Gohil',hobby:'teaching'}"  
-[matMenuTriggerFor]="lazyMenu">Gohil</button>
+[matMenuTriggerFor]="lazyMenu">Gohil</button> -->
+
+<!-- <h4>MatList</h4>
+
+<mat-list dense>
+  <mat-list-item>List 1</mat-list-item>
+  <mat-list-item>List 2</mat-list-item>
+  <mat-list-item>List 3</mat-list-item>
+</mat-list>
+
+<mat-nav-list>
+  <mat-list-item><a href="#">Home</a></mat-list-item>
+  <mat-list-item><a href="#">About</a></mat-list-item>
+  <mat-list-item><a href="#">Conact</a></mat-list-item>
+</mat-nav-list>
+
+<mat-nav-list>
+  <mat-list-item>
+    <mat-icon matListIcon>home</mat-icon>
+    <h4 matLine>Heading</h4>
+    <p matLine>adsadf</p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <mat-icon matListIcon>folder</mat-icon>
+    <h4 matLine>Heading</h4>
+    <p matLine>adsadf</p>
+  </mat-list-item>
+</mat-nav-list> -->
+
+<!-- <h4>Mat Gride</h4>
+<mat-grid-list cols="2" rowHeight="fit" style="height:200px;" gutterSize="10px">
+  <mat-grid-tile>Tile 1</mat-grid-tile>
+  <mat-grid-tile>Tile 2</mat-grid-tile>
+  <mat-grid-tile>Tile 3</mat-grid-tile>
+  <mat-grid-tile>Tile 4</mat-grid-tile>
+</mat-grid-list> -->
+
+<!-- <h4>Cards</h4>
+
+<mat-card>
+  <mat-card-title>Ravi</mat-card-title>
+  <mat-card-content>aasas</mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button>Login</button>
+  </mat-card-actions>
+</mat-card> -->
+
+<!-- <h4>Tabs</h4>
+<mat-tab-group #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)">
+  <mat-tab label="Angular">Angular</mat-tab>
+  <mat-tab label="React">Ract</mat-tab>
+  <mat-tab label="vue">Vue</mat-tab>
+</mat-tab-group>
+{{tabRef.selectedIndex}} -->
+
+<!-- <h4>Stepper</h4>
+<mat-vertical-stepper linear>
+    <mat-step label="shipping address" completed="true"><p>Shipping address</p></mat-step>
+    <mat-step label="billing address" completed="false" optional>
+      <p>billing address</p>
+      <button mat-button matStepperNext>Next</button>
+      <button mat-button matStepperPrevious>Previous</button>
+    </mat-step>
+    <mat-step label="order details" completed="false"><p>order details</p></mat-step>
+</mat-vertical-stepper> -->
+
+<!-- <h4>Form</h4>
+<mat-form-field hideRequiredMarker appearance="fill" color="accent">
+  <mat-label>Name</mat-label>
+  <input matInput required >
+  <mat-hint align="end">min 5 character</mat-hint>
+</mat-form-field>
+<mat-form-field hideRequiredMarker appearance="outline" color="warn">
+  <mat-label>Name</mat-label>
+  <input matInput required >
+  <mat-hint align="end">min 5 character</mat-hint>
+</mat-form-field> -->
+
+<!-- <h4>Mat Select</h4>
+<mat-form-field appearance="outline">
+  <mat-label>Topic</mat-label>
+  <mat-select [(value)]="selectedValue" multiple>
+    <mat-option>None</mat-option>
+    <mat-optgroup label="web">
+    <mat-option value="angular">Angular</mat-option>
+    <mat-option value="react">React</mat-option>
+    <mat-option value="vue">Vue</mat-option>
+    </mat-optgroup>
+    <mat-optgroup label="mobile">
+    <mat-option value="asd">asd</mat-option>
+    <mat-option value="asdd">asdd</mat-option>
+    </mat-optgroup>
+    </mat-select>
+</mat-form-field>
+{{selectedValue}} -->
+
+<!-- <h4>Auto Complete</h4>
+
+<form>
+  <mat-form-field>
+      <input type="text" matInput [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of options" [value]="option">
+            {{option}}
+        </mat-option>
+      </mat-autocomplete>
+  </mat-form-field>
+</form> -->
+
+<!-- <h4>Checkbox</h4>
+
+<mat-checkbox>Subscribe</mat-checkbox><br>
+<mat-checkbox labelPosition="before">Subscribe</mat-checkbox><br>
+<mat-checkbox color="primary">Subscribe</mat-checkbox><br>
+<mat-checkbox color="warn">Subscribe</mat-checkbox> -->
+
+<!-- <h4>Radio button</h4>
+
+<mat-radio-group>
+  <mat-radio-button value="male" color="primary">male</mat-radio-button>
+  <mat-radio-button value="female">female</mat-radio-button>
+</mat-radio-group> -->
+
+<!-- <h4>Date Picker</h4>
+
+<mat-form-field>
+  <input matInput [matDatepicker]="mydatePicker">
+  <mat-datepicker-toggle [for]="mydatePicker" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #mydatePicker></mat-datepicker>
+</mat-form-field> -->
+
+<!-- <h4>Mat tooltip</h4>
+<button mat-raised-button matTooltip="Welcome to hello" matTooltipShowDelay="2000"
+matTooltipHideDelay="2000">Hello</button>
+<button mat-raised-button matTooltip="Welcome to hello" matTooltipPosition="after">Hello</button> -->
+
+<h4>Snackbar</h4>
+
+<button mat-button (click)="openSnackbar('item deleted','Dismiss')">Click</button>
